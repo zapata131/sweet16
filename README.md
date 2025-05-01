@@ -7,7 +7,7 @@
   - [Layer 0 – macOS + Chrome](#layer-0--macos--chrome)
   - [Layer 1 – DaVinci Resolve](#layer-1--davinci-resolve)
   - [Layer 2 – Affinity Designer](#layer-2--affinity-designer)
-- [Keyboard Macros](#keyboard-macros)
+
 
 The Sweet 16 Macro Keyboard bu 1UP Keyboards uses QMK (Quantum Mechanical Keyboard) Firmware. These allows to have different layers and interesting usability for this 4x4 keyboard.
 
