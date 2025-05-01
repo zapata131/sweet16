@@ -6,6 +6,7 @@
 - [Layers](#layers)
   - [Layer 0](#layer-0)
   - [Layer 1](#layer-1)
+  - [Layer 1](#layer-2)
 - [Keyboard Macros](#keyboard-macros)
 
 The Sweet 16 Macro Keyboard bu 1UP Keyboards uses QMK (Quantum Mechanical Keyboard) Firmware. These allows to have different layers and interesting usability for this 4x4 keyboard.
@@ -52,72 +53,80 @@ For the purpose of these documentation, we name the keys in the first row of the
 
 The QMK firmware allows to have multiple keybord layers that change layout and usability. For usability, we are using the `key13` (the red key) to change layers.
 
-Right now I'm using two layers:
+Right now I'm using three layers:
 
-- **Layer 0**: General work and OS-level shortcuts.
-- **Layer 1**: Video editing (DaVinci Resolve) Shortcuts
+- **Layer 0**: macOS + Chrome shortcuts  
+- **Layer 1**: DaVinci Resolve editing tools  
+- **Layer 2**: Affinity Designer layout and editing controls
 
 QMK allows yuou to create keyboard macros, so most of the usability of the keyboard exploits this feature.
 
 The following section detail the layout and usability of each layer.
 
-### Layer 0
+### Layer 0 – macOS + Chrome {#layer-0}
 
-Layer 0 is my base layer. It has shortcut macros used for navigation in Chrome and other OS-level shortcuts.
+| Key    | Shortcut              | Explanation                                |
+|--------|-----------------------|--------------------------------------------|
+| Key00  | ⌘ + C                 | Copy                                        |
+| Key01  | ⌘ + V                 | Paste                                       |
+| Key02  | ⌘ + Z                 | Undo                                        |
+| Key03  | Layer toggle          | Switch to next layer                        |
+| Key04  | ⌘ + ⇧ + 4             | Screenshot (selected area)                 |
+| Key05  | ⌘ + Tab               | App switcher                               |
+| Key06  | ⌘ + W                 | Close window/tab                            |
+| Key07  | ⌘ + Space             | Spotlight search                           |
+| Key08  | ⌘ + T                 | New tab (Chrome)                           |
+| Key09  | ⌘ + ⇧ + T             | Reopen last closed tab                     |
+| Key10  | ⌘ + ⇧ + N             | New incognito window                       |
+| Key11  | ⌘ + R                 | Reload page                                |
+| Key12  | ⌘ + Option + ←        | Previous tab                               |
+| Key13  | ⌘ + Option + →        | Next tab                                   |
+| Key14  | Control + ⇧ + Tab     | Universal previous tab                     |
+| Key15  | ⌘ + W                 | Close tab (near tab navigation keys)       |
 
-The following table shows the current usage of each key.
+### Layer 1 – DaVinci Resolve {#layer-1}
 
+| Key    | Shortcut              | Explanation                                |
+|--------|-----------------------|--------------------------------------------|
+| Key00  | J                     | Play reverse                               |
+| Key01  | K                     | Stop playback                              |
+| Key02  | L                     | Play forward                               |
+| Key03  | Layer toggle          | Switch to next layer                       |
+| Key04  | [                     | Previous keyframe                          |
+| Key05  | ]                     | Next keyframe                              |
+| Key06  | Option + Delete       | Ripple delete forward                      |
+| Key07  | Shift + Delete        | Ripple delete backward                     |
+| Key08  | A                     | Selection mode                             |
+| Key09  | T                     | Trim mode                                  |
+| Key10  | B                     | Blade tool                                 |
+| Key11  | ⌘ + B                 | Cut at playhead                            |
+| Key12  | ↑                     | Previous edit                              |
+| Key13  | ↓                     | Next edit                                  |
+| Key14  | ←                     | Step back one frame                        |
+| Key15  | →                     | Step forward one frame                     |
 
-| Layer 0 | - | - | - |
-|-|-|-|-|
-| Zoom Audio Toggle | Zoom Video Toggle | NA | NA |
-| Undo (Macro 8) | Redo (Macro 9) | NA | NA |
-| Back in Chrome (Macro 4) | Forward in Chrome (Macro 5) | Previous tab in Chrome (Macro 6) | NExt tab in Chrome (Macro 7) |
-| Changes to Layer 1 | New Tab in Chrome (Macro 1) | Open last closed tab in Chrome (Macro 2) | Closes current tab in Chorme (Macro 3) |
+### Layer 2 – Affinity Designer {#layer-2}
 
-For a detailed explanaition of each macro, see the [Keyboard Macros](#keyboard-macros) section.
+| Key    | Shortcut              | Explanation                                |
+|--------|-----------------------|--------------------------------------------|
+| Key00  | V                     | Move tool                                  |
+| Key01  | A                     | Node tool                                  |
+| Key02  | P                     | Pen tool                                   |
+| Key03  | Layer toggle          | Switch to next layer                       |
+| Key04  | ⌘ + G                 | Group selection                            |
+| Key05  | ⌘ + ⇧ + G             | Ungroup                                    |
+| Key06  | ⌘ + Z                 | Undo                                       |
+| Key07  | ⌘ + ⇧ + Z             | Redo                                       |
+| Key08  | ⌘ + C                 | Copy                                       |
+| Key09  | ⌘ + V                 | Paste                                      |
+| Key10  | ⌘ + D                 | Deselect                                   |
+| Key11  | T                     | Text tool                                  |
+| Key12  | ⌘ + ⇧ + ]             | Bring to front                             |
+| Key13  | ⌘ + ]                 | Bring forward                              |
+| Key14  | ⌘ + [                 | Send backward                              |
+| Key15  | ⌘ + ⇧ + [             | Send to back                               |
 
-### Layer 1
-
-Layer 1 is my video editing layer. It has shortcut macros used in Da Vinci Resolve. It is a work in progress.
-
-The following table shows the current usage of each key.
-
-
-| Layer 1 | - | - | - |
-|-|-|-|-|
-| NA | NA | NA | NA |
-| NA | NA | NA | NA |
-| Ripple Delete from Start | Ripple Delete to End | Zoom In | Zoom Out |
-| Changes to Layer 0 |  Link/Unlink Clips (Macro 14) | Split Clips (Macro 15) | B-Roll (Macro 0) |
-
-For a detailed explanaition of each macro, see the [Keyboard Macros](#keyboard-macros) section.
-
-
-## Keyboard Macros
-
-The following is a list of all the macros in this configuration and their usage.
-
-- **Macro 0**: In DaVinci Resolve, unlinks audio and video and adds the retime controls. Special for B-Roll.
-- **Macro 1**: In Chrome, opens a new tab (⌘+T).
-- **Macro 2**: In Chrome, opens last closed tab (⌘+Shift+T).
-- **Macro 3**: In Chrome, closes the current tab (⌘+W).
-- **Macro 4**: In Chrome, last page (⌘+[ ).
-- **Macro 5**: In Chrome, next page (⌘+] ).
-- **Macro 6**: In Chrome, previous tab. (⌘+PgUp)
-- **Macro 7**: In Chrome, next tab (⌘+PgDN).
-- **Macro 8**: Undo (⌘+Z).
-- **Macro 9**: Redo (⌘+Shift+Z).
-- **Macro 10**: NA.
-- **Macro 11**: NA.
-- **Macro 12**: In Zoom, Audio toggle (⌘+A).
-- **Macro 13**: In Zoom, Video toggle (⌘+V).
-- **Macro 14**: In DaVinci Resolve, toggles clip linking (⌥+⌘+L).
-- **Macro 15**: In DaVinci Resolve, splits clips (⌘+\\).
-- **Macro 16**: In DaVinci Resolve, ripple delete from start (Shift+⌘+[).
-- **Macro 17**: In DaVinci Resolve, ripple delete to end (Shift+⌘+]).
-- **Macro 18**: In DaVinci Resolve, zoom out (⌘ + -).
-- **Macro 19**: In DaVinci Resolve, zoom in (⌘ + +).
+---
 
 Note: The following characters represent some of the special keys.
 - ⌘ is also known as Command or Cmd
