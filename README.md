@@ -4,7 +4,7 @@
   - [Flashing the Keyboard](#flashing-the-keyboard)
 - [General Layout](#general-layout)
 - [Layers](#layers)
-  - [Layer 0 – macOS + Chrome](#layer-0--macos--chrome)
+  - [Layer 0 – macOS + Chrome](#layer-0--macos-and-chrome)
   - [Layer 1 – DaVinci Resolve](#layer-1--davinci-resolve)
   - [Layer 2 – Affinity Designer](#layer-2--affinity-designer)
 
@@ -63,7 +63,7 @@ QMK allows yuou to create keyboard macros, so most of the usability of the keybo
 
 The following section detail the layout and usability of each layer.
 
-### Layer 0 – macOS + Chrome {#layer-0}
+### Layer 0 – macOS and Chrome
 
 | Key    | Shortcut              | Explanation                                |
 |--------|-----------------------|--------------------------------------------|
@@ -84,7 +84,7 @@ The following section detail the layout and usability of each layer.
 | Key14  | Control + ⇧ + Tab     | Universal previous tab                     |
 | Key15  | ⌘ + W                 | Close tab (near tab navigation keys)       |
 
-### Layer 1 – DaVinci Resolve {#layer-1}
+### Layer 1 – DaVinci Resolve
 
 | Key    | Shortcut              | Explanation                                |
 |--------|-----------------------|--------------------------------------------|
@@ -105,7 +105,7 @@ The following section detail the layout and usability of each layer.
 | Key14  | ←                     | Step back one frame                        |
 | Key15  | →                     | Step forward one frame                     |
 
-### Layer 2 – Affinity Designer {#layer-2}
+### Layer 2 – Affinity Designer
 
 | Key    | Shortcut              | Explanation                                |
 |--------|-----------------------|--------------------------------------------|
